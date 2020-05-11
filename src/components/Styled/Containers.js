@@ -11,4 +11,8 @@ export const Section = styled('section')`
     margin-bottom: 20vh;
     padding-top: 10vh;
     height: ${({ height }) => height || '100vh'};
+
+    @media screen and (max-width: 800px) {
+        height: 100%; 
+    }
 `

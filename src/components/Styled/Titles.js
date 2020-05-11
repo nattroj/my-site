@@ -10,4 +10,8 @@ export const SectionTitle = styled('h2')`
     &::selection {
         background-color: ${backgrounds.lightest};
     }
+
+    @media screen and (max-width: 800px) {
+        text-align: center;
+    }
 `

@@ -1,7 +1,7 @@
 export default [
     {
         name: 'Schematic Capture',
-        stack: ['React', 'Redux', 'Express','Knex', 'Node.Js', 'PostgreSQL', 'Firebase', 'Docker'],
+        stack: ['React', 'Redux', 'Express','Knex', 'Node.Js', 'PostgreSQL', 'Firebase', 'Docker', 'Figma'],
         APIs: ['SendGrid'],
         links: [
             {

@@ -5,11 +5,11 @@ import { backgrounds, fonts } from '../../util/colors';
 
 const StyledHeader = styled('header')`
     position: fixed;
+    display: flex;
     top: 0;
     left: 0;
     font-weight: bold;
     background-color: ${backgrounds.light};
-    display: flex;
     width: 100%;
     justify-content: space-between;
 `
@@ -35,8 +35,15 @@ const SocialContainer = styled('div')`
         .fa-linkedin {
             color: ${fonts.light};            
         }
+
+        @media screen and (max-width: 800px) {
+            margin: 0 10px;
+        }
     }
 
+    @media screen and (max-width: 800px) {
+        margin-right: 0px;
+    }
 
 `
 

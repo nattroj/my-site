@@ -11,6 +11,10 @@ import projectData from './projectData';
 const ProjectsContainer = styled('div')`
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 800px) {
+        flex-wrap: wrap;
+    }
 `
 
 

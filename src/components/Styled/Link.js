@@ -19,4 +19,8 @@ export const NavLink = styled(StyledSrollLink) `
     &:hover {
         background-color: ${backgrounds.lightest};
     }
+
+    @media screen and (max-width: 800px) {
+        padding: 10px;
+    }
 `
