@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Section } from '../Styled/Containers';
 import { SectionTitle } from '../Styled/Titles';
 import { Comment } from '../Styled/Text';
+import { tablet } from '../../util/screens';
 
 import Project from './Project';
 
@@ -12,7 +13,7 @@ const ProjectsContainer = styled('div')`
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width: 800px) {
+    ${tablet} {
         flex-wrap: wrap;
     }
 `

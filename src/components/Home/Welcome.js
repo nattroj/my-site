@@ -40,6 +40,7 @@ const ConsoleLog = styled('span')`
 
   .string {
     color: ${fonts.green};
+    word-wrap: break-word;
   }
 `
 
