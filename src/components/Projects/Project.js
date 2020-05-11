@@ -3,13 +3,14 @@ import styled from 'styled-components';
 
 import { fonts } from '../../util/colors';
 import { Comment, InnerComment } from '../Styled/Text'
+import { tablet } from '../../util/screens';
 
 const ProjectContainer = styled('div')`
     margin-right: 35px;
     margin-top: 35px;
     width: 45%;
 
-    @media screen and (max-width: 800px) {
+    ${tablet} {
         width: 100%; 
     }
 
@@ -20,7 +21,7 @@ const ProjectContainer = styled('div')`
     .repositories {
         display: flex;
 
-        @media screen and (max-width: 800px) {
+        ${tablet} {
             flex-direction: column;
         }
     }
@@ -33,7 +34,7 @@ const ProjectContainer = styled('div')`
 
         padding-right: 15px;
 
-        @media screen and (max-width: 800px) {
+        ${tablet} {
             &:first-of-type {
                 margin-left: 0px;
             }

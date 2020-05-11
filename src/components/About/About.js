@@ -6,6 +6,7 @@ import { Section } from '../Styled/Containers';
 import { SectionTitle } from '../Styled/Titles';
 import { Comment, InnerComment } from '../Styled/Text';
 import { fonts } from '../../util/colors';
+import { tablet } from '../../util/screens';
 
 
 const AboutContainer = styled('div')`
@@ -21,7 +22,7 @@ const AboutContainer = styled('div')`
         }
     }
 
-    @media screen and (max-width: 800px) {
+    ${tablet} {
         flex-direction: column-reverse;
         flex-wrap: wrap;
     }
@@ -40,7 +41,7 @@ const ImageContainer = styled('div')`
         width: 100%;
     }
 
-    @media screen and (max-width: 800px) {
+    ${tablet} {
         margin-left: 0;;
         height: 50%;
         width: 50%;
@@ -51,7 +52,7 @@ const ImageContainer = styled('div')`
 const AboutText = styled('div')`
     width: 50%;
 
-    @media screen and (max-width: 800px) {
+    ${tablet} {
         width: 100%;
     }
 `
@@ -79,13 +80,13 @@ const About = () => {
                     </InnerComment>
                     <InnerComment>
                         I've been coding professionally (mostly in Python and Javascript) for around 2 years, 
-                        but I've been honing my deductive reasoning skills my whole life (thank you, Detective Conan and Professor Layton!).
+                        but I've been honing my problem solving skills my whole life (thank you, Detective Conan and Professor Layton!).
                         I'm currently looking for my next opportunity as a software developer; if I seem like a match for your needs, take a peek at my&nbsp;
                         <a href="/assets/nattajohn_rojanasupya_resume.pdf" className='link' target='_blank' rel='noopener noreferre'>resume</a>
                         .
                     </InnerComment>
                     <InnerComment>
-                        Please feel free to reach out to me if you would like to&nbsp;
+                        Would you like to&nbsp;
                         <GetInTouchLink
                             to='contact'
                             activeClass='active'
@@ -94,7 +95,7 @@ const About = () => {
                         >
                             get in touch
                         </GetInTouchLink>
-                        !
+                        ? Please feel free to reach out!
                     </InnerComment>
                     <Comment>{'*/'}</Comment>
                 </AboutText>

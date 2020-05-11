@@ -5,6 +5,7 @@ import { Section } from '../Styled/Containers';
 import { SectionTitle } from '../Styled/Titles';
 import { Comment } from '../Styled/Text';
 import { fonts } from '../../util/colors';
+import { tablet } from '../../util/screens';
 
 const ContactTextContainer = styled('address')`
     margin-top: 15vh;
@@ -23,13 +24,14 @@ const ContactTextContainer = styled('address')`
 
     .string {
         color: ${fonts.green};
+        word-wrap: break-word;
     }
 
     div {
         margin-bottom: 35px;
     }
 
-    @media screen and (max-width: 800px) {
+    ${tablet} {
         font-size: 1rem;
     }
 `
