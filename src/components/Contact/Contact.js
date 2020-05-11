@@ -28,6 +28,10 @@ const ContactTextContainer = styled('address')`
     div {
         margin-bottom: 35px;
     }
+
+    @media screen and (max-width: 800px) {
+        font-size: 1rem;
+    }
 `
 
 const Instructions = styled('span')`
@@ -98,12 +102,13 @@ const Contact = () => {
     }, [showToast, setShowToast]);
 
     return (
-        <Section id='contact' height='70vh'>
+        <Section id='contact'>
             <SectionTitle>Contact</SectionTitle>
             <Comment>{"// Don't you hate when you click an email address and it takes 3 years to launch the wrong mail client?"}</Comment>
+            <br />
             <Comment>
                 {"// Same... None of that happening here! "} 
-                <Instructions>Just click on the email or phone number and it'll be copied to your clipboard</Instructions>
+                <Instructions>You can click on the phone number to call me, or click on the email to copy it to your clipboard</Instructions>
                 .
             </Comment>
             <ContactTextContainer>
@@ -139,7 +144,7 @@ const Contact = () => {
                     <span className='const'>const&nbsp;</span>
                     <span className='var_name'>phone&nbsp;</span>
                     <span className='special_char'>=&nbsp;</span>
-                    <ContactText className='string' onClick={() => copyText(phone)}>"{phone}"</ContactText>
+                    <a href='tel:5623169560' className='string' onClick={() => copyText(phone)}>"{phone}"</a>
                     <span className='special_char'>;</span>
                 </div>
                 {showToast && <Snackbar>{toastText}</Snackbar>}

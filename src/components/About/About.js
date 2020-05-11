@@ -20,6 +20,12 @@ const AboutContainer = styled('div')`
             text-decoration: underline;
         }
     }
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
 `
 
 const ImageContainer = styled('div')`
@@ -33,10 +39,21 @@ const ImageContainer = styled('div')`
         height: 100%;
         width: 100%;
     }
+
+    @media screen and (max-width: 800px) {
+        margin-left: 0;;
+        height: 50%;
+        width: 50%;
+    }
+
 `
 
 const AboutText = styled('div')`
     width: 50%;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
 `
 
 const GetInTouchLink = styled(StyledSrollLink)`
@@ -57,7 +74,7 @@ const About = () => {
                     <Comment>{'/*'}</Comment>
                     <InnerComment>
                         Hiya! You can call me Nattajohn, Nate, or John. Take your pick.
-                        You can blame my Thai descent for my really long name.
+                        You can blame my Thai descent for my really long name (I can also speak the language).
                         In my free time, you'll typically find me enjoying some kind of strategy game or watching anime.
                     </InnerComment>
                     <InnerComment>
