@@ -10,6 +10,7 @@ import { tablet } from '../../util/screens';
 const ContactTextContainer = styled('address')`
     margin-top: 15vh;
     font-size: 1.5rem;
+
     .const {
         color: ${fonts.purple};
     }
