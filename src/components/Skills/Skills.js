@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
+import { technologies, languages } from './skillsData';
+
 import { Section } from '../Styled/Containers';
 import { SectionTitle } from '../Styled/Titles';
 import { Comment } from '../Styled/Text';
@@ -48,7 +51,7 @@ const Skills = () => {
                 <span className='var_name'>technologies&nbsp;</span>
                 <span className='special_char'>=&nbsp;</span>
                 <span className='special_char'>[</span>
-                {['React', 'Redux', 'Express', 'Knex', 'Node.Js', 'Docker'].map(skill => {
+                {technologies.map(skill => {
                     return (
                         <>
                             <div className='skill'>
@@ -66,7 +69,7 @@ const Skills = () => {
                 <span className='var_name'>languages&nbsp;</span>
                 <span className='special_char'>=&nbsp;</span>
                 <span className='special_char'>[</span>
-                {['Python', 'JavaScript', 'HTML', 'CSS', 'SQL'].map(skill => {
+                {languages.map(skill => {
                     return (
                         <>
                             <div className='skill'>

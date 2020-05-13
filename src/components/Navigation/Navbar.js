@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StyledSrollLink } from '../Styled/Link';
-import { backgrounds, fonts } from '../../util/colors';
+import { backgrounds } from '../../util/colors';
 import { tablet, mobile } from '../../util/screens';
 
 export const NavLink = styled(StyledSrollLink) `
