@@ -2,10 +2,14 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 import { fonts } from '../../util/colors';
-import { mobile } from '../../util/screens';
+import { mobile, tablet } from '../../util/screens';
 
 const ConsoleLogContainer = styled('div')`
   padding-top: 40vh;
+
+  ${tablet} {
+    padding-top: 20vh;
+  }
 `
 
 const ConsoleLog = styled('span')`
@@ -80,7 +84,6 @@ const WelcomeMessage = () => {
         <span className='spec_char'>{message.slice(7,8)}</span>
         <span className='method'>{message.slice(8,11)}</span>
         <span className='spec_char'>{message.slice(11,12)}</span>
-        <br className='mobile' />
         <span className='string'>{message.slice(12,65)}</span>
         <span className='spec_char'>{message.slice(65,67)}</span>
       </ConsoleLog>

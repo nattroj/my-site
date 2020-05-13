@@ -74,19 +74,18 @@ const About = () => {
                 <AboutText>
                     <Comment>{'/*'}</Comment>
                     <InnerComment>
-                        Hiya! You can call me Nattajohn, Nate, or John. Take your pick.
-                        You can blame my Thai descent for my really long name (I can also speak the language).
-                        In my free time, you'll typically find me enjoying some kind of strategy game or watching anime.
-                    </InnerComment>
-                    <InnerComment>
+                        Hiya! I'm Nattajohn Rojanasupya. I usually go by Nattajohn, Nate, or John.
                         I've been coding professionally (mostly in Python and Javascript) for around 2 years, 
                         but I've been honing my problem solving skills my whole life (thank you, Detective Conan and Professor Layton!).
-                        I'm currently looking for my next opportunity as a software developer; if I seem like a match for your needs, take a peek at my&nbsp;
+                    </InnerComment>
+                    <InnerComment>
+                        In my free time, you'll typically find me enjoying some kind of strategy game or watching anime.
+                        I'm currently looking for my next opportunity as a software developer; if I seem like a fit for your needs, I'd appreciate it if you took a peek at my&nbsp;
                         <a href="/assets/nattajohn_rojanasupya_resume.pdf" className='link' target='_blank' rel='noopener noreferre'>resume</a>
                         .
                     </InnerComment>
                     <InnerComment>
-                        Would you like to&nbsp;
+                        If you want to&nbsp;
                         <GetInTouchLink
                             to='contact'
                             activeClass='active'
@@ -95,7 +94,7 @@ const About = () => {
                         >
                             get in touch
                         </GetInTouchLink>
-                        ? Please feel free to reach out!
+                        , please feel free to reach out!
                     </InnerComment>
                     <Comment>{'*/'}</Comment>
                 </AboutText>
