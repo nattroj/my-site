@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StyledSrollLink } from '../Styled/Link';
-import { backgrounds, fonts } from '../../util/colors';
+import { backgrounds } from '../../util/colors';
 import { tablet, mobile } from '../../util/screens';
 
 export const NavLink = styled(StyledSrollLink) `
@@ -125,6 +125,7 @@ const Navbar = () => {
             </DropDown>
             <StyledNav ref={navbarRef}>
                 <NavLink onClick={showNavbar} to='home' activeClass='active' spy={true} smooth={true}>Home</NavLink>
+                <NavLink onClick={showNavbar} to='skills' activeClass='active' spy={true} smooth={true}>Skills</NavLink>
                 <NavLink onClick={showNavbar} to='projects' activeClass='active' spy={true} smooth={true}>Projects</NavLink>
                 <NavLink onClick={showNavbar} to='about' activeClass='active' spy={true} smooth={true}>About</NavLink>
                 <NavLink onClick={showNavbar} to='contact' activeClass='active' spy={true} smooth={true}>Contact</NavLink>
