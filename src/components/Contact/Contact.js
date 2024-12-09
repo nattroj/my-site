@@ -87,7 +87,7 @@ const Snackbar = styled('div')`
 `
 
 const Contact = () => {
-    const [email] = useState('n.rojanasupya@gmail.com');
+    const [email] = useState('hello@nattajohn.com');
     const [phone] = useState('562.316.9560');
     const [showToast ,setShowToast] = useState(false);
     const [toastText, setToastText] = useState('');
